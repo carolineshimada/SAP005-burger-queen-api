@@ -8,6 +8,8 @@
 
 ## 1. Introdução
 
+![imagem](/imageReadme/Ratatouille-logo.png)
+
 O front-end da aplicação Ratatouille-Burger já está criado, agora precisamos de um back-end para manipulação CRUD dos dados.
 
 O back-end será feito através de uma API rest que será compatível com as requisições vindas do front.
