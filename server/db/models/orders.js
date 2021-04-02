@@ -5,11 +5,6 @@ const {
 
 module.exports = (sequelize, DataTypes) => {
   class Orders extends Model {
-    /**
-     * Helper method for defining associations.
-     * This method is not a part of Sequelize lifecycle.
-     * The `models/index` file will call this method automatically.
-     */
     static associate(models) {
       Orders.belongsToMany(models.Products, {
         through: "ProductsOrders",
@@ -18,7 +13,6 @@ module.exports = (sequelize, DataTypes) => {
         otherKey: "product_id",
         onDelete: "CASCADE",
       })
-      // define association here
     }
   };
   Orders.init({
