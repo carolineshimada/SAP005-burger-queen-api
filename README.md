@@ -8,7 +8,7 @@
 
 ## 1. Introdução
 
-![imagem](/imageReadme/Ratatouille-logo.png)
+![imagem](Ratatouille-logo.png)
 
 O front-end da aplicação Ratatouille-Burger já está criado, agora precisamos de um back-end para manipulação CRUD dos dados.
 
