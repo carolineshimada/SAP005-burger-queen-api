@@ -136,7 +136,7 @@ const deleteOrder = async (req, res, next) => {
   try {
     const productsOrders = await models.ProductOrders.destroy({
       where: 
-      {id:req.params.id}
+      {order_id:req.params.id}
     });
     const order = await models.Orders.destroy({
       where: 
