@@ -79,7 +79,7 @@ const postOrder = async (req, res, next) => {
   const { user_id, client_name, table, products } = req.body;
 
   if( user_id == null || client_name == null || table == null|| products == null){
-    return res.status(400).json({ status: "Verify object" })
+    return res.status(400).json({ status: "review object" })
   }
   if( user_id == '' || client_name == '' || table == '' || products == ''){
     return res.status(400).json({ status: "Fill empty fields." })
@@ -92,7 +92,7 @@ const postOrder = async (req, res, next) => {
       return res.status(404).json({ "error": "product doesn't exist"})
     }
   });
-
+  
   try {
     const orderCreated = await models.Orders.create(req.body)
     req.body.products.map(async(item) => {
